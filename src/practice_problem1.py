@@ -216,19 +216,19 @@ class Box(object):
           #   s is 'Robot Fun'   [this is the part of the doubled
           #                       contents that did NOT fit]
         """
-        # ---------------------------------------------------------------------
-        # TODO: 4. Implement and test this function.
-        #     The testing code is already written for you (above).
-        # ---------------------------------------------------------------------
-        # ---------------------------------------------------------------------
-        # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
-        #    DIFFICULTY:      5
-        #    TIME ESTIMATE:   3 minutes.
-        # ---------------------------------------------------------------------
-        #######################################################################
-        # FOR FULL CREDIT, YOUR SOLUTION MUST BE NO MORE THAN
-        #    ** TWO **   LINES OF CODE.
-        #######################################################################
+    # ---------------------------------------------------------------------
+    # TODO: 4. Implement and test this function.
+    #     The testing code is already written for you (above).
+    # ---------------------------------------------------------------------
+    # ---------------------------------------------------------------------
+    # DIFFICULTY AND TIME RATINGS (see top of this file for explanation)
+    #    DIFFICULTY:      5
+    #    TIME ESTIMATE:   3 minutes.
+    # ---------------------------------------------------------------------
+    #######################################################################
+    # FOR FULL CREDIT, YOUR SOLUTION MUST BE NO MORE THAN
+    #    ** TWO **   LINES OF CODE.
+    #######################################################################
 
 
 
