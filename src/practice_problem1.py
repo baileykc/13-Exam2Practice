@@ -171,25 +171,20 @@ class Box(object):
         #       Read_this_ONLY_when_asked_Part_2.txt
         #    and complete your work on the problem.
         # ---------------------------------------------------------------------
-        space = self.volume - len(self.contents)
-        number_of_characters_to_append = min(space,
-                                             len(additional_contents))
-
-        stuff_to_add = ''
-        for k in range(number_of_characters_to_append):
-            stuff_to_add = stuff_to_add + additional_contents[k]
-        self.contents = self.contents + stuff_to_add
-
-        stuff_to_return = ''
-        for k in range(number_of_characters_to_append,
-                       len(additional_contents)):
-            stuff_to_return = stuff_to_return + additional_contents[k]
-
-        return stuff_to_return
+        can_add = self.volume - len(self.contents)
+        if can_add > len(additional_contents):
+            end = len(additional_contents)
+        else:
+            end = can_add
+        for k in range(end):
+            self.contents = self.contents + additional_contents[k]
+        s = ''
+        for k in range(end, len(additional_contents)):
+            s = s + additional_contents[k]
+        return s
 
 
-
-        """
+    """"
         What comes in:
           -- self
         What goes out:
@@ -234,6 +229,8 @@ class Box(object):
         # FOR FULL CREDIT, YOUR SOLUTION MUST BE NO MORE THAN
         #    ** TWO **   LINES OF CODE.
         #######################################################################
+
+
 
     def shrink(self, new_volume):
         """
